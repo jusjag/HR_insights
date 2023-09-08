@@ -1,7 +1,15 @@
 # HR Insights - Data in Motion Challenge
+The best description for this project would be: managing workarounds for things I don't know, using the skills I already have.<br>
+This is my very first project in Power BI being also my first practical contact with this tool. I already had some Tableau experience but zero knowledge of DAX, which would cetrainly help me. So I had to find other way to do all the things I wanted.<br>
+<b>But this is exactly what makes me a great data analyst: I look for solutions.</b> I search for answears. I don't give up because of a sigle error (or a two-day string of errors either). 
+<br><br>
+General project purpose: learn how to use Power BI in practice<br>
+Data source: Data in Motion Challenge<br>
+Challenge objections: 
+Tools used: PowerBI, PowerQuery, BigQuery, Figma
 
-
-## Step 1: data cleaning
+## Step 1: the data
+Full dataset can be found here:
 - deleting columns that are unnecessary or even illegal for the employer to store (race, orientation, marital status)
 
 ## Step 2: Visual analysis
