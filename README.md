@@ -10,14 +10,13 @@ Tools used: PowerBI, PowerQuery, BigQuery, Figma
 
 ## Step 1: the data
 Full dataset can be found here:
+Data preparation included steps like:
 - deleting columns that are unnecessary or even illegal for the employer to store (race, orientation, marital status)
+- deleting columns I knew I wasn't going to use (age, IDs of higher level managers)
+- setting appropiate data types
 
-## Step 2: Visual analysis
-
-## Step 3: Some SQL
-Next, I wanted to know the percentage of people leaving compared to all active workers from all departments and subdepartments. The departments vary significantly by size, so the absolute numbers don't show the real picture.<br> 
-Since I was new to Power BI and didn't know DAX very well, I decided to use SQL.<br>
-The fastest way was using BigQuery. Pros: fast and easy process of uploading and querying a CSV file. Cons: BQ has a slightly different SQL syntax, for example EXTRACT(year from date) instead of year(date). 
+Now, I wanted to check the percentage of employees leaving in scale of year or department. It would probably be possible with some advanced DAX expression, but since I was a Power BI newbie, I had to find it other way. I decided to use SQL and loaded the table to BigQuery. Even though it uses slightly different syntax, I appreciate its fast and easy process of importing CSV files. 
+<br><br>
 So the query below gives information about active and gone employees from every department and subdepartment, for every year. 
 ```sql
 WITH years AS
@@ -32,10 +31,16 @@ SELECT
   "2022" as year,
   department, 
   sub_department, 
-  count(employee_id) as active_workers,
-  count(term_year) as gone
+  count(employee_id) as active_workers
   FROM years
 WHERE hire_year <= 2022 AND (term_year >= 2022 OR term_year is null)
 group by department, sub_department
 ```
-Could it be done in better way, covering all years in one query? I think so. Did i know how to do it? Not yet :) I'm sure I'll go back to this query later because it 
+Could it be done in better way, covering all years in one query? I think so. Did i know how to do it? Not yet :)
+<br><br>
+I also wanted a number of employees that left every year divided by department and subdepartment. To do so, I simply created a table visualisation in Power BI, exported it to CSV, joined with results of previous query... and voila, finally I could add a calculated column to find the metric I was looking for. 
+<br><br>
+One day I'll be able to do it all in one or two complex DAX expressions. For now, I think my way also worked fine.<br>
+
+## Step 2: visualisations
+## Step 3:
