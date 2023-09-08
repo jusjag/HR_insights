@@ -1,23 +1,28 @@
 # HR Insights - Data in Motion Challenge
-The best description for this project would be: managing workarounds for things I don't know, using the skills I already have.<br>
+The best description for this project would be: <br>
+managing workarounds for things I don't know by using the skills I already have :)<br><br>
 This is my very first project in Power BI being also my first practical contact with this tool. I already had some Tableau experience but zero knowledge of DAX, which would cetrainly help me. So I had to find other way to do all the things I wanted.<br>
 <b>But this is exactly what makes me a great data analyst: I look for solutions.</b> I search for answears. I don't give up because of a sigle error (or a two-day string of errors either). 
 <br><br>
 General project purpose: learn how to use Power BI in practice<br>
-Data source: Data in Motion Challenge<br>
-Challenge objections: 
-Tools used: PowerBI, PowerQuery, BigQuery, Figma
+Project idea: Data in Motion free visualization challenge
+Tools used: PowerBI, PowerQuery, BigQuery, SQL
 
-## Step 1: the data
-Full dataset can be found here:
-Data preparation included steps like:
-- deleting columns that are unnecessary or even illegal for the employer to store (race, orientation, marital status)
-- deleting columns I knew I wasn't going to use (age, IDs of higher level managers)
-- setting appropiate data types
+## The project
+This is my solution to data visualization challenge "People analytics" from <a href="https://d-i-motion.com/courses/data-viz-challenges/#learndash-course-content">Data in Motion.</a><br>
+Objective: create a report showing insights from given dataset (note: challenge description is now locked to logged in users, so I don't remember exact requirements)<br><br>
+I already did the challenge report using Tableau, now I decided to redo it using Power BI.
 
-Now, I wanted to check the percentage of employees leaving in scale of year or department. It would probably be possible with some advanced DAX expression, but since I was a Power BI newbie, I had to find it other way. I decided to use SQL and loaded the table to BigQuery. Even though it uses slightly different syntax, I appreciate its fast and easy process of importing CSV files. 
+## The data:
+Raw dataset provided here: <a href="https://docs.google.com/spreadsheets/d/1Dg_aczyeCh0izhIrZhVDCfuKqSApjMCV7flxaY6iUnA/edit#gid=423853547">go to Google Sheet to see the table</a>.
+Data preparation
+- deleting columns that are unnecessary or even illegal for the employer to store (race, orientation, marital status),
+- deleting columns I knew I wasn't going to use (age, IDs of higher level managers),
+- setting appropiate data types etc
 <br><br>
-So the query below gives information about active and gone employees from every department and subdepartment, for every year. 
+As I decided to focus on information about employees leaving the company, I wanted to find a percentage of people leaving for ach department, subdepartment and year.<br> It's probably possible by using one DAX expression, but since I was a Power BI newbie, I had to find it some other way. My solution was to load the table to BigQuery and use SQL to find the values. 
+<br><br>
+Here's the query returning number of employees working in each department and subdepartment in each year. Luckily the GoogleSQL syntax is only slightly different from the SQL I use (note the EXTRACT function). 
 ```sql
 WITH years AS
 (SELECT
