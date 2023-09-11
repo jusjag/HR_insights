@@ -1,21 +1,17 @@
 # HR Insights - Data in Motion Challenge
 The best description for this project would be: <br>
 managing workarounds for things I don't know by using the skills I already have :)<br><br>
-This is my very first project in Power BI being also my first practical contact with this tool. I already had some Tableau experience but zero knowledge of DAX, which would cetrainly help me. So I had to find other way to do all the things I wanted.<br>
-<b>But this is exactly what makes me a great data analyst: I look for solutions.</b> I search for answears. I don't give up because of a sigle error (or a two-day string of errors either). 
-<br><br>
-General project purpose: learn how to use Power BI in practice<br>
-Project idea: Data in Motion free visualization challenge
-Tools used: PowerBI, PowerQuery, BigQuery, SQL
+This is my very first project in Power BI being also my first practical contact with this tool. I decided to learn-by-doing and recreate a dashboard I previously made in Tableau. 
 
 ## The project
-This is my solution to data visualization challenge "People analytics" from <a href="https://d-i-motion.com/courses/data-viz-challenges/#learndash-course-content">Data in Motion.</a><br>
-Objective: create a report showing insights from given dataset (note: challenge description is now locked to logged in users, so I don't remember exact requirements)<br><br>
-I already did the challenge report using Tableau, now I decided to redo it using Power BI.
+General project purpose: learn how to use Power BI in practice<br>
+Project idea: Visualization challenge "People analytics" from <a href="https://d-i-motion.com/courses/data-viz-challenges/#learndash-course-content">Data in Motion.</a>.<br>
+Objective: show insights from a given dataset (challenge description is now locked to logged-in users only, so I don't remember exact requirements).<br>
+Dataset: <a href="https://docs.google.com/spreadsheets/d/1Dg_aczyeCh0izhIrZhVDCfuKqSApjMCV7flxaY6iUnA/edit#gid=423853547">see raw table in Google Sheets</a>.
+Tools used: PowerBI, PowerQuery, BigQuery, SQL.
 
 ## The data:
-Raw dataset provided here: <a href="https://docs.google.com/spreadsheets/d/1Dg_aczyeCh0izhIrZhVDCfuKqSApjMCV7flxaY6iUnA/edit#gid=423853547">go to Google Sheet to see the table</a>.
-Data preparation
+Data preparation:
 - deleting columns that are unnecessary or even illegal for the employer to store (race, orientation, marital status),
 - deleting columns I knew I wasn't going to use (age, IDs of higher level managers),
 - setting appropiate data types etc
@@ -43,9 +39,11 @@ group by department, sub_department
 ```
 Could it be done in better way, covering all years in one query? I think so. Did i know how to do it? Not yet :)
 <br><br>
-I also wanted a number of employees that left every year divided by department and subdepartment. To do so, I simply created a table visualisation in Power BI, exported it to CSV, joined with results of previous query... and voila, finally I could add a calculated column to find the metric I was looking for. 
+I also wanted a number of employees that left every year, divided by department and subdepartment. To do so, I simply created a table visualisation in Power BI, exported it to CSV, joined with results of previous query... and voila, finally I could add a calculated column to find the metric I was looking for. 
 <br><br>
 One day I'll be able to do it all in one or two complex DAX expressions. For now, I think my way also worked fine.<br>
 
 ## Step 2: visualisations
+
+
 ## Step 3:
