@@ -1,18 +1,23 @@
 # HR Insights - Data in Motion Challenge
-The best description for this project would be: managing workarounds for things I don't know by using the skills I already have :)<br><br>
-This is my very first project in Power BI being also my first practical contact with this tool.<br>
-I decided to learn-by-doing and recreate a dashboard I previously made in Tableau.
 
-Contents:
+![header image](Screenshots/HR_insights_GH.jpg)<br><br>
+The best description for this project would be: managing workarounds for things I don't know by using the skills I already have :)<br><br>
+This is my very first project in Power BI being also my first practical contact with this tool. I decided to learn-by-doing and recreate a dashboard I previously made in Tableau.
+<br>
+Check the dashboard at <a href="https://www.novypro.com/project/hr-insights">Novypro</a>.<br>
+
+## Tools used:
+Power Query, Power BI, BigQuery, SQL
+
+## Contents:
 * [The project](#the-project)
 * [The data](#the-data)
-  <br>
+
 ## The project
 General project purpose: learn how to use Power BI in practice<br>
 Project idea: Visualization challenge "People analytics" from <a href="https://d-i-motion.com/courses/data-viz-challenges/#learndash-course-content">Data in Motion.</a>.<br>
 Objective: show insights from a given dataset (challenge description is now locked to logged-in users only, so I don't remember exact requirements).<br>
 Dataset: <a href="https://docs.google.com/spreadsheets/d/1Dg_aczyeCh0izhIrZhVDCfuKqSApjMCV7flxaY6iUnA/edit#gid=423853547">see raw table in Google Sheets</a>.
-Tools used: PowerBI, PowerQuery, BigQuery, SQL.
 
 ## The data:
 Data preparation:
