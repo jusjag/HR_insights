@@ -4,7 +4,7 @@
 This is my very first project in Power BI being also my first practical contact with this tool. <br>
 I decided to learn-by-doing and recreate a dashboard I previously made in Tableau.
 <br><br>
-See the full report at <a href="https://www.novypro.com/project/hr-insights">Novypro</a>.<br>
+See the full report at <a href="https://www.novypro.com/project/hr-insights">Novypro</a>.<br><br>
 
 ## Tools used:
 Power Query, Power BI, BigQuery, SQL
@@ -57,9 +57,12 @@ I also wanted a number of employees that left every year, but this time I simply
 I'm sure I'll soon learn to do it all with DAX expressions, but I think my solution works fine as long as all the values are correct.<br>
 <br>
 ## The report
+![Report page one](Screenshots/HR_report1.png)<br><br>
 One look at the dashboard and the manager can see the employee turnover level and the fact that over 80% of dismissals were voluntary.<br> Does a salary play a role here? Looks like it depends on the department. Two of them stand out for their difference between the salary of current and former workers.<br><br>
+![Report page one](Screenshots/HR_report2.png)<br><br>
 Looking at the tenures of former employees we can clearly see a pattern: three peaks of when do people leave. I grouped them into 4 categories and checked their reasons for a job change: looks like every group has some different reasons, and "better salary" isn't the most important one.<br>
 <br>
-There were sure much more insights to show from this dataset, but the requirements said clearly "two pages max". Also, that quick report helped me get on with the Power BI and now I'm ready to play with much more advanced projects
-<br><br>
+There were sure much more insights to show from this dataset, but the requirements said clearly "two pages max". <br>
+Am I 100% happy with this report? No :) But that wasn't the purpose. It helped me in getting confident while using Power BI interface and creating visualizations looking the way I wanted.<br>
+So I'll leave it as it is and move on to something much more challenging.<br><br>
 Thank you for reading!
