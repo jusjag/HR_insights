@@ -51,10 +51,8 @@ SELECT
 WHERE hire_year <= 2022 AND (term_year >= 2022 OR term_year is null)
 group by department, sub_department
 ```
-Could it be done in better way, covering all years in one query? I think so. Did i know how to do it? Not yet :)
 <br><br>
-I also wanted a number of employees that left every year, but this time I simply made a table visualization with the values I needed and exported it to CSV file. Then it was just a few clicks to join it all in Power Query and add a calculated column to give me the values I was looking for.<br>
-I'm sure I'll soon learn to do it all with DAX expressions, but I think my solution works fine as long as all the values are correct.<br>
+I also needed a number of employees that left every year, but this time I simply made a table vizualisation with the values I needed and exported its results to CSV file. Then it was just a few clicks to join it all in Power Query and get the values I was looking for. It may be not the best way to do it, but worked fine for the absolute beginner. at the time of writing this documentation I already know how to do it with DAX :)
 <br>
 ## The report
 ![Report page one](Screenshots/HR_report1.png)<br><br>
@@ -62,7 +60,6 @@ One look at the dashboard and the manager can see the employee turnover level an
 ![Report page one](Screenshots/HR_report2.png)<br><br>
 Looking at the tenures of former employees we can clearly see a pattern: three peaks of when do people leave. I grouped them into 4 categories and checked their reasons for a job change: looks like every group has some different reasons, and "better salary" isn't the most important one.<br>
 <br>
-There were sure much more insights to show from this dataset, but the requirements said clearly "two pages max". <br>
-Am I 100% happy with this report? No :) But that wasn't the purpose. It helped me in getting confident while using Power BI interface and creating visualizations looking the way I wanted.<br>
-So I'll leave it as it is and move on to something much more challenging.<br><br>
+For sure there were much more insights to show from this dataset, but the requirements said clearly "two pages max". <br> 
+This report helped me to become confident with the Power BI interface and to create visualizations looking the way I wanted. But now I'll leave it as it is and move on to something more challenging.<br><br>
 Thank you for reading!
