@@ -16,7 +16,7 @@ Power Query, Power BI, BigQuery, SQL
 
 ## The project
 - <b>General project purpose:</b> learn how to use Power BI in practice<br>
-- <b>Project idea:</b> Visualization challenge "People analytics" from <a href="https://d-i-motion.com/courses/data-viz-challenges/#learndash-course-content">Data in Motion.</a>.<br>
+- <b>Project idea:</b> Visualization challenge "People analytics" from <a href="https://d-i-motion.com/courses/data-viz-challenges/#learndash-course-content">Data in Motion</a>.<br>
 - <b>Objective:</b> show insights from a given dataset on report of max 2 pages.<br>
 - <b>Dataset:</b> <a href="https://docs.google.com/spreadsheets/d/1Dg_aczyeCh0izhIrZhVDCfuKqSApjMCV7flxaY6iUnA/edit#gid=423853547">see raw table in Google Sheets</a>.
 
